@@ -1,0 +1,280 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Contact Us" %} - Lumina Salon{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="relative pt-32 pb-20">
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1920&q=80" 
+             class="w-full h-full object-cover" alt="{% trans 'Contact Us' %}">
+        <div class="absolute inset-0 bg-black/70"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 text-center">
+        <h1 class="font-display text-5xl md:text-6xl font-bold mb-4">{% trans "CONTACT US" %}</h1>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-20 bg-black">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <!-- Contact Form -->
+            <div class="bg-charcoal rounded-3xl p-8 lg:p-10">
+                <h2 class="font-display text-3xl font-bold mb-8">{% trans "Book Your Appointment" %}</h2>
+                
+                {% if messages %}
+                <div class="mb-6">
+                    {% for message in messages %}
+                    <div class="bg-green-900/50 border border-green-500 text-green-300 px-6 py-4 rounded-xl mb-2">
+                        <i class="fas fa-check-circle mr-2"></i>{{ message }}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                <form id="contact-form" method="POST" class="space-y-6">
+                    {% csrf_token %}
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-2">{% trans "First Name" %}</label>
+                            <input type="text" name="first_name" required
+                                   class="w-full bg-black/50 border border-white/20 rounded-xl px-6 py-4 focus:outline-none focus:border-gold text-white"
+                                   placeholder="{% trans 'Enter your first name' %}">
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-2">{% trans "Last Name" %}</label>
+                            <input type="text" name="last_name" required
+                                   class="w-full bg-black/50 border border-white/20 rounded-xl px-6 py-4 focus:outline-none focus:border-gold text-white"
+                                   placeholder="{% trans 'Enter your last name' %}">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-2">{% trans "Email Address" %}</label>
+                            <input type="email" name="email" required
+                                   class="w-full bg-black/50 border border-white/20 rounded-xl px-6 py-4 focus:outline-none focus:border-gold text-white"
+                                   placeholder="{% trans 'your@email.com' %}">
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-2">{% trans "Phone Number" %}</label>
+                            <input type="tel" name="phone" required
+                                   class="w-full bg-black/50 border border-white/20 rounded-xl px-6 py-4 focus:outline-none focus:border-gold text-white"
+                                   placeholder="+255 700 000 000">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-2">{% trans "Service You Want" %}</label>
+                        <select name="service" required
+                                class="w-full bg-black/50 border border-white/20 rounded-xl px-6 py-4 focus:outline-none focus:border-gold text-white">
+                            <option value="">{% trans "Select a service" %}</option>
+                            <option value="haircut">{% trans "Hair Cutting & Styling" %}</option>
+                            <option value="coloring">{% trans "Hair Coloring" %}</option>
+                            <option value="extensions">{% trans "Hair Extensions" %}</option>
+                            <option value="eyelash">{% trans "Eyelash Extensions" %}</option>
+                            <option value="eyebrow">{% trans "Semi-Permanent Eyebrow" %}</option>
+                            <option value="makeup">{% trans "Makeup" %}</option>
+                            <option value="bridal">{% trans "Bridal Services" %}</option>
+                            <option value="spa">{% trans "Spa & Massage" %}</option>
+                            <option value="other">{% trans "Other" %}</option>
+                        </select>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-2">{% trans "Preferred Appointment Date" %}</label>
+                            <input type="date" name="date" required
+                                   class="w-full bg-black/50 border border-white/20 rounded-xl px-6 py-4 focus:outline-none focus:border-gold text-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-2">{% trans "Preferred Appointment Time" %}</label>
+                            <div class="flex gap-2">
+                                <select name="hour" required
+                                        class="flex-1 bg-black/50 border border-white/20 rounded-xl px-2 py-4 focus:outline-none focus:border-gold text-white">
+                                    <option value="">{% trans "Hr" %}</option>
+                                    {% for h in '123456789'|make_list %}<option value="{{ h }}">{{ h }}</option>{% endfor %}
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <select name="minute" required
+                                        class="flex-1 bg-black/50 border border-white/20 rounded-xl px-2 py-4 focus:outline-none focus:border-gold text-white">
+                                    <option value="00">00</option>
+                                    <option value="30">30</option>
+                                </select>
+                                <select name="period" required
+                                        class="flex-1 bg-black/50 border border-white/20 rounded-xl px-2 py-4 focus:outline-none focus:border-gold text-white">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-2">{% trans "Additional Details" %}</label>
+                        <textarea name="message" rows="4"
+                                  class="w-full bg-black/50 border border-white/20 rounded-xl px-6 py-4 focus:outline-none focus:border-gold text-white resize-none"
+                                  placeholder="{% trans 'Tell us more about your needs, preferences, or any special requests...' %}"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-gold w-full py-5 text-black font-semibold text-lg rounded-xl">
+                        <i class="fas fa-calendar-check mr-2"></i>
+                        {% trans "Book Appointment" %}
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div>
+                <!-- Contact Details -->
+                <div class="mb-10">
+                    <h2 class="font-display text-3xl font-bold mb-4">{% trans "CONTACT DETAILS" %}</h2>
+                    <div class="wave-divider mb-8"></div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 gold-bg rounded-full flex items-center justify-center">
+                                <i class="fas fa-phone text-black"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">{% trans "Phone" %}</p>
+                                <p class="text-white text-lg">+255 700 000 000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 gold-bg rounded-full flex items-center justify-center">
+                                <i class="fas fa-envelope text-black"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">{% trans "Email" %}</p>
+                                <p class="text-white text-lg">info@luminasalon.co.tz</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 gold-bg rounded-full flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-black"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">{% trans "Address" %}</p>
+                                <p class="text-white text-lg">{% trans "Mwenge, Near Diamond Plaza" %}<br>{% trans "Dar es Salaam, Tanzania" %}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 gold-bg rounded-full flex items-center justify-center">
+                                <i class="fab fa-whatsapp text-black"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">{% trans "WhatsApp" %}</p>
+                                <p class="text-white text-lg">+255 700 000 000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Business Hours -->
+                <div class="mb-10">
+                    <h2 class="font-display text-3xl font-bold mb-4">{% trans "BUSINESS HOURS" %}</h2>
+                    <div class="wave-divider mb-8"></div>
+                    
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="flex justify-between py-2 border-b border-white/10 px-3">
+                            <span class="text-white">{% trans "Monday" %}</span>
+                            <span class="text-gold">{% trans "11am - 7pm" %}</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-white/10 px-3">
+                            <span class="text-white">{% trans "Tuesday" %}</span>
+                            <span class="text-gold">{% trans "10am - 8pm" %}</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-white/10 px-3">
+                            <span class="text-white">{% trans "Wednesday" %}</span>
+                            <span class="text-gold">{% trans "10am - 8pm" %}</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-white/10 px-3">
+                            <span class="text-white">{% trans "Thursday" %}</span>
+                            <span class="text-gold">{% trans "10am - 8pm" %}</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-white/10 px-3">
+                            <span class="text-white">{% trans "Friday" %}</span>
+                            <span class="text-gold">{% trans "10am - 8pm" %}</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-white/10 px-3">
+                            <span class="text-white">{% trans "Saturday" %}</span>
+                            <span class="text-gold">{% trans "9am - 6pm" %}</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-white/10 px-3 col-span-2">
+                            <span class="text-white">{% trans "Sunday" %}</span>
+                            <span class="text-red-400">{% trans "Closed" %}</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map -->
+                <div>
+                    <h2 class="font-display text-3xl font-bold mb-4">{% trans "OUR LOCATION" %}</h2>
+                    <div class="wave-divider mb-8"></div>
+                    
+                    <div class="rounded-3xl overflow-hidden h-64">
+                        <iframe 
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=39.20517%2C-6.79820%2C39.24498%2C-6.77461&layer=mapnik&marker=-6.7878%2C39.2265"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-2 text-center">
+                        <i class="fas fa-map-marker-alt text-gold mr-2"></i>
+                        {% trans "Mwenge Area, Near Diamond Plaza, Dar es Salaam" %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Success Modal -->
+<div id="successModal" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center">
+    <div class="bg-charcoal rounded-3xl p-10 max-w-lg w-full mx-4 text-center">
+        <div class="w-24 h-24 gold-bg rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-check text-4xl text-black"></i>
+        </div>
+        <h2 class="font-display text-3xl font-bold mb-4">{% trans "Appointment Booked!" %}</h2>
+        <p class="text-gray-300 mb-6">
+            {% trans "Thank you for booking with Lumina Salon. We have received your appointment request and will contact you shortly to confirm." %}
+        </p>
+        <div class="bg-black/50 rounded-xl p-4 mb-6">
+            <p class="text-gray-400 text-sm">{% trans "Confirmation sent to:" %}</p>
+            <p class="text-gold" id="confirmationEmail"></p>
+        </div>
+        <button onclick="closeSuccessModal()" class="btn-gold w-full py-4 text-black font-semibold rounded-xl">
+            {% trans "Done" %}
+        </button>
+    </div>
+</div>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        // Form will submit normally, Django will handle it
+    });
+</script>
+
+<!-- Back to Top -->
+<a href="#" class="fixed bottom-8 right-8 w-12 h-12 bg-gold rounded-full flex items-center justify-center text-black shadow-lg hover:shadow-xl transition z-50">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+{% endblock %}

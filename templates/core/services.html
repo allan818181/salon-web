@@ -1,0 +1,191 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Services" %} - Lumina Salon{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="relative pt-32 pb-20">
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1920&q=80" 
+             class="w-full h-full object-cover" alt="{% trans 'Beauty Services' %}">
+        <div class="absolute inset-0 bg-black/70"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 text-center">
+        <h1 class="font-display text-5xl md:text-6xl font-bold mb-4">{% trans "SERVICES" %}</h1>
+        <div class="wave-divider mx-auto"></div>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="py-16 bg-black">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1633681927035-3e58b5d4b235?w=800&q=80" 
+                     class="w-full rounded-3xl object-cover" alt="{% trans 'Salon Interior' %}">
+            </div>
+            <div>
+                <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">
+                    {% trans "RELAX & RENEW AT OUR SALON" %}
+                </h2>
+                <div class="wave-divider mb-8"></div>
+                <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                    {% trans "Step into our serene sanctuary and walk out feeling rejuvenated. Our welcoming environment is designed for you to express your vision and needs." %}
+                </p>
+                <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                    {% trans "Whether you need a trim to refresh your current style, a total makeover, or special event styling, our skilled team delivers exceptional results." %}
+                </p>
+                <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                    {% trans "Our stylists are trained in the latest coloring techniques and will start by getting clear on your needs and vision." %}
+                </p>
+                <a href="{% url 'contact' %}" class="btn-gold inline-block px-10 py-4 text-black font-semibold rounded-full">
+                    {% trans "Book Now" %}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Consultation Section -->
+<section class="py-16 bg-charcoal">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto">
+            <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">{% trans "CONSULTATION" %}</h2>
+            <div class="wave-divider mx-auto mb-8"></div>
+            <p class="text-gray-300 text-lg leading-relaxed">
+                {% trans "Let's have a chat about your hair, your vision, and your inspiration. We'll talk about the smartest ways to get your hair healthy, happy, and beautiful. Additionally, we'll let you know exactly how much your services will cost before we begin." %}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- What We Do Section -->
+<section class="py-20 bg-black">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="text-center mb-16">
+            <p class="text-gold text-sm tracking-widest uppercase mb-2">{% trans "What We Do" %}</p>
+            <h2 class="font-display text-4xl md:text-5xl font-bold">{% trans "OUR SERVICES" %}</h2>
+        </div>
+        
+        <div class="space-y-8">
+            <!-- Service 1: Cut/Colour/Style -->
+            <div class="card-luxury p-8 rounded-3xl">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-cut text-2xl text-black"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-display text-2xl font-bold mb-4">{% trans "CUT / COLOUR / STYLE" %}</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            {% trans "Expert haircuts and hair color techniques including balayage, highlights, lowlights, babylights, and ombre. We specialize in customized techniques for all hair types, including blonde hair experts and curly hair specialists. We deliver the best result possible every time." %}
+                        </p>
+                    </div>
+                    <a href="{% url 'contact' %}" class="btn-gold px-8 py-3 text-black font-semibold rounded-full whitespace-nowrap">
+                        {% trans "Book Now" %}
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Service 2: Hair Extensions -->
+            <div class="card-luxury p-8 rounded-3xl">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-gem text-2xl text-black"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-display text-2xl font-bold mb-4">{% trans "HAIR EXTENSIONS" %}</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            {% trans "Transform your look with our premium human hair extension options including weaves, fusions, tape-in, and clip-in extensions. Our stylists will help decide what's right for you, ensuring the best experience with natural-looking results." %}
+                        </p>
+                    </div>
+                    <a href="{% url 'contact' %}" class="btn-gold px-8 py-3 text-black font-semibold rounded-full whitespace-nowrap">
+                        {% trans "Book Now" %}
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Service 3: Eyelash Extensions -->
+            <div class="card-luxury p-8 rounded-3xl">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-eye text-2xl text-black"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-display text-2xl font-bold mb-4">{% trans "EYELASH EXTENSIONS" %}</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            {% trans "Get luscious lashes 24/7 with our professional eyelash extension services. We offer classic, volume, mega volume, and hybrid options. Whether you're looking for the hottest lash extensions in town, we've got you covered." %}
+                        </p>
+                    </div>
+                    <a href="{% url 'contact' %}" class="btn-gold px-8 py-3 text-black font-semibold rounded-full whitespace-nowrap">
+                        {% trans "Book Now" %}
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Service 4: Semi-Permanent Eyebrow -->
+            <div class="card-luxury p-8 rounded-3xl">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-pencil-alt text-2xl text-black"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-display text-2xl font-bold mb-4">{% trans "SEMI-PERMANENT EYEBROW" %}</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            {% trans "Save time in your daily routine with our semi-permanent eyebrow solutions. We offer powder brow and ombre brow services, plus threading services to shape your brows perfectly." %}
+                        </p>
+                    </div>
+                    <a href="{% url 'contact' %}" class="btn-gold px-8 py-3 text-black font-semibold rounded-full whitespace-nowrap">
+                        {% trans "Book Now" %}
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Service 5: Makeup -->
+            <div class="card-luxury p-8 rounded-3xl">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-paint-brush text-2xl text-black"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-display text-2xl font-bold mb-4">{% trans "MAKEUP" %}</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            {% trans "Professional makeup services for weddings, special events, and photoshoots. From a natural look to full glam, we'll help you look as good as you feel for any occasion." %}
+                        </p>
+                    </div>
+                    <a href="{% url 'contact' %}" class="btn-gold px-8 py-3 text-black font-semibold rounded-full whitespace-nowrap">
+                        {% trans "Book Now" %}
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Service 6: Bridal -->
+            <div class="card-luxury p-8 rounded-3xl">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-heart text-2xl text-black"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-display text-2xl font-bold mb-4">{% trans "BRIDAL" %}</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            {% trans "Special occasion styling and makeup services for your big day. We offer bride and bridal party packages. We can come to your venue for on-site services, or you can visit us at the salon." %}
+                        </p>
+                    </div>
+                    <a href="{% url 'contact' %}" class="btn-gold px-8 py-3 text-black font-semibold rounded-full whitespace-nowrap">
+                        {% trans "Book Now" %}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Back to Top -->
+<a href="#" class="fixed bottom-8 right-8 w-12 h-12 bg-gold rounded-full flex items-center justify-center text-black shadow-lg hover:shadow-xl transition z-50">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+{% endblock %}

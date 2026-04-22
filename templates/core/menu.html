@@ -1,0 +1,254 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Menu" %} - Lumina Salon{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="relative pt-32 pb-20">
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1920&q=80" 
+             class="w-full h-full object-cover" alt="{% trans 'Salon Services' %}">
+        <div class="absolute inset-0 bg-black/70"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 text-center">
+        <h1 class="font-display text-5xl md:text-6xl font-bold mb-4">{% trans "SERVICE MENU" %}</h1>
+        <div class="wave-divider mx-auto"></div>
+    </div>
+</section>
+
+<!-- Menu Content -->
+<section class="py-20 bg-black">
+    <div class="max-w-5xl mx-auto px-4 lg:px-8">
+        
+        <!-- Intro -->
+        <div class="text-center mb-16">
+            <h3 class="text-gold text-lg uppercase tracking-widest mb-4">{% trans "Healthy Hair Services For All Hair Types" %}</h3>
+            <p class="text-gray-400 leading-relaxed max-w-2xl mx-auto">
+                {% trans "Lumina Salon offers professional hair care services for all hair types. Enjoy a relaxing scalp massage with every wash, hot towel compress, and meticulous attention to detail. We use only quality products to ensure the best results for your hair." %}
+            </p>
+        </div>
+        
+        <!-- Cutting Section -->
+        <div class="mb-16">
+            <h2 class="font-display text-3xl font-bold mb-8 pb-4 border-b border-white/10">{% trans "CUTTING" %}</h2>
+            
+            <div class="space-y-4">
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Women's Wash / Cut / Style" %}</h4>
+                        <p class="text-gray-500 text-sm">{% trans "65,000 TSh & Up" %}</p>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "From 65,000 TSh" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Men's Cut" %}</h4>
+                        <p class="text-gray-500 text-sm">{% trans "35,000 TSh & Up" %}</p>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "From 35,000 TSh" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Children's Cut (Under 13 years)" %}</h4>
+                        <p class="text-gray-500 text-sm">{% trans "25,000 TSh & Up" %}</p>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "From 25,000 TSh" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Women's Wash and Style" %}</h4>
+                        <p class="text-gray-500 text-sm">{% trans "45,000 TSh & Up" %}</p>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "From 45,000 TSh" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Formal Style" %}</h4>
+                        <p class="text-gray-500 text-sm">{% trans "75,000 TSh & Up" %}</p>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "From 75,000 TSh" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Hair Treatments" %}</h4>
+                        <p class="text-gray-500 text-sm">{% trans "25,000 TSh & Up" %}</p>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "From 25,000 TSh" %}</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Colouring Section -->
+        <div class="mb-16">
+            <h2 class="font-display text-3xl font-bold mb-8 pb-4 border-b border-white/10">{% trans "COLOURING" %}</h2>
+            
+            <div class="space-y-4">
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Colour Retouch" %}</h4>
+                        <p class="text-gray-500 text-sm">{% trans "60,000 TSh & Up" %}</p>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "From 60,000 TSh" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Glaze" %}</h4>
+                        <p class="text-gray-500 text-sm">{% trans "70,000 TSh & Up" %}</p>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "From 70,000 TSh" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Creative Colour" %}</h4>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "By Consultation" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Partial Foil" %}</h4>
+                        <p class="text-gray-500 text-sm">{% trans "95,000 TSh & Up" %}</p>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "From 95,000 TSh" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Full Foil" %}</h4>
+                        <p class="text-gray-500 text-sm">{% trans "130,000 TSh & Up" %}</p>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "From 130,000 TSh" %}</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hair Extension Section -->
+        <div class="mb-16">
+            <h2 class="font-display text-3xl font-bold mb-8 pb-4 border-b border-white/10">{% trans "HAIR EXTENSION" %}</h2>
+            
+            <div class="flex justify-between items-center py-4 border-b border-white/5">
+                <div>
+                    <h4 class="text-lg font-semibold">{% trans "Human Hair Extension" %}</h4>
+                </div>
+                <span class="text-gold font-semibold">{% trans "By Consultation" %}</span>
+            </div>
+        </div>
+        
+        <!-- Other Services Section -->
+        <div class="mb-16">
+            <h2 class="font-display text-3xl font-bold mb-8 pb-4 border-b border-white/10">{% trans "OTHER SERVICES" %}</h2>
+            
+            <div class="space-y-4">
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Gift Certificates" %}</h4>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "Available" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "In Salon Packages" %}</h4>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "Ask For Details" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Wedding Packages" %}</h4>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "By Consultation" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Makeup Application" %}</h4>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "By Consultation" %}</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Waxing Section -->
+        <div class="mb-16">
+            <h2 class="font-display text-3xl font-bold mb-4">{% trans "WAXING" %}</h2>
+            <p class="text-gold text-sm uppercase tracking-widest mb-8">{% trans "Facial Waxing & Threading" %}</p>
+            
+            <div class="space-y-4">
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Eyebrow" %}</h4>
+                    </div>
+                    <span class="text-gold font-semibold">15,000 TSh</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Lip & Chin" %}</h4>
+                    </div>
+                    <span class="text-gold font-semibold">15,000 TSh</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Eyebrow Tint" %}</h4>
+                    </div>
+                    <span class="text-gold font-semibold">20,000 TSh</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Threading" %}</h4>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "By Consultation" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Eyelash Extensions" %}</h4>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "By Consultation" %}</span>
+                </div>
+                
+                <div class="flex justify-between items-center py-4 border-b border-white/5">
+                    <div>
+                        <h4 class="text-lg font-semibold">{% trans "Powder & Ombre Brows" %}</h4>
+                    </div>
+                    <span class="text-gold font-semibold">{% trans "By Consultation" %}</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Note -->
+        <div class="bg-charcoal rounded-2xl p-6 text-center">
+            <p class="text-gray-500 text-sm">
+                * {% trans "Prices may vary according to level of stylist. Chemical services do not include cut & style. Kindly provide 24-hour cancellation notice." %}
+            </p>
+        </div>
+        
+        <!-- Book Now Button -->
+        <div class="text-center mt-12">
+            <a href="{% url 'contact' %}" class="btn-gold inline-block px-12 py-5 text-black font-semibold text-lg rounded-full">
+                {% trans "Book Now" %}
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Back to Top -->
+<a href="#" class="fixed bottom-8 right-8 w-12 h-12 bg-gold rounded-full flex items-center justify-center text-black shadow-lg hover:shadow-xl transition z-50">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+{% endblock %}

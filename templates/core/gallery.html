@@ -1,0 +1,394 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Gallery" %} - Lumina Salon{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="relative pt-32 pb-20 overflow-hidden">
+    <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80" 
+             class="w-full h-full object-cover" alt="{% trans 'Gallery' %}">
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 text-center">
+        <p class="text-gold text-sm tracking-[0.3em] uppercase mb-4">{% trans "Our Beautiful Work" %}</p>
+        <h1 class="font-display text-5xl md:text-7xl font-bold mb-6">{% trans "GALLERY" %}</h1>
+        <div class="wave-divider mx-auto mb-4"></div>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg">{% trans "Explore our stunning transformations and professional services" %}</p>
+    </div>
+</section>
+
+<!-- Gallery Content -->
+<section class="py-20 bg-gradient-to-b from-black to-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        
+        <!-- Category Tabs -->
+        <div class="flex flex-wrap justify-center gap-3 mb-16">
+            <button onclick="filterGallery('all')" class="gallery-tab active px-8 py-3 rounded-full bg-gold text-black font-semibold transition all" data-filter="all">
+                {% trans "ALL" %}
+            </button>
+            <button onclick="filterGallery('hair')" class="gallery-tab px-8 py-3 rounded-full border-2 border-white/20 text-white hover:border-gold hover:text-gold transition" data-filter="hair">
+                {% trans "HAIR" %}
+            </button>
+            <button onclick="filterGallery('makeup')" class="gallery-tab px-8 py-3 rounded-full border-2 border-white/20 text-white hover:border-gold hover:text-gold transition" data-filter="makeup">
+                {% trans "MAKEUP" %}
+            </button>
+            <button onclick="filterGallery('nails')" class="gallery-tab px-8 py-3 rounded-full border-2 border-white/20 text-white hover:border-gold hover:text-gold transition" data-filter="nails">
+                {% trans "NAILS" %}
+            </button>
+            <button onclick="filterGallery('spa')" class="gallery-tab px-8 py-3 rounded-full border-2 border-white/20 text-white hover:border-gold hover:text-gold transition" data-filter="spa">
+                {% trans "SPA" %}
+            </button>
+        </div>
+        
+        <!-- Gallery Grid - 24 Images -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6" id="gallery-grid">
+            
+            <!-- Hair Image 1 -->
+            <div class="gallery-item cursor-pointer group" data-category="hair">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Hair Style">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Gorgeous Waves</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hair Image 2 -->
+            <div class="gallery-item cursor-pointer group" data-category="hair">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37aa?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Hair Style">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Silky Straight</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hair Image 3 -->
+            <div class="gallery-item cursor-pointer group" data-category="hair">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Hair Style">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Volume Bob</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hair Image 4 -->
+            <div class="gallery-item cursor-pointer group" data-category="hair">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Hair Style">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Balayage Magic</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hair Image 5 -->
+            <div class="gallery-item cursor-pointer group" data-category="hair">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Hair Style">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Copper Dreams</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hair Image 6 -->
+            <div class="gallery-item cursor-pointer group" data-category="hair">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Hair Style">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Blonde Elegance</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Makeup Image 1 -->
+            <div class="gallery-item cursor-pointer group" data-category="makeup">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Makeup">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Bridal Glam</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Makeup Image 2 -->
+            <div class="gallery-item cursor-pointer group" data-category="makeup">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc786a9a4?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Makeup">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Natural Glow</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Makeup Image 3 -->
+            <div class="gallery-item cursor-pointer group" data-category="makeup">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Makeup">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Evening Glam</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Makeup Image 4 -->
+            <div class="gallery-item cursor-pointer group" data-category="makeup">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1596906663290-895e56602d12?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Makeup">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Bold & Beautiful</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nails Image 1 -->
+            <div class="gallery-item cursor-pointer group" data-category="nails">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Nails">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Gel Perfection</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nails Image 2 -->
+            <div class="gallery-item cursor-pointer group" data-category="nails">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059a98d?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Nails">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">French Tips</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nails Image 3 -->
+            <div class="gallery-item cursor-pointer group" data-category="nails">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Nails">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Acrylic Art</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nails Image 4 -->
+            <div class="gallery-item cursor-pointer group" data-category="nails">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Nails">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Color Crush</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SPA Image 1 -->
+            <div class="gallery-item cursor-pointer group" data-category="spa">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Spa">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Relaxation</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SPA Image 2 -->
+            <div class="gallery-item cursor-pointer group" data-category="spa">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab93ce10f07?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Spa">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Facial Care</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SPA Image 3 -->
+            <div class="gallery-item cursor-pointer group" data-category="spa">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac9274d999?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Spa">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Massage Bliss</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SPA Image 4 -->
+            <div class="gallery-item cursor-pointer group" data-category="spa">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1600335895229-0f5d8c8e5e6f?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Spa">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Head Spa</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hair Extra 1 -->
+            <div class="gallery-item cursor-pointer group" data-category="hair">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1601784551446-471f4f671d6c?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Hair Style">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Caramel Waves</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hair Extra 2 -->
+            <div class="gallery-item cursor-pointer group" data-category="hair">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1560869713-bf4de800c7c4?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Hair Style">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Cut & Style</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hair Extra 3 -->
+            <div class="gallery-item cursor-pointer group" data-category="hair">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1633681927035-3e58b5d4b235?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Hair Style">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Style Studio</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hair Extra 4 -->
+            <div class="gallery-item cursor-pointer group" data-category="hair">
+                <div class="relative overflow-hidden rounded-2xl aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1599058945522-572525e5d54e?w=600&q=80" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-125" alt="Hair Style">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-6">
+                        <span class="text-white font-medium">Ombre Dreams</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="fixed inset-0 bg-black/95 z-50 hidden flex items-center justify-center">
+    <button onclick="closeLightbox()" class="absolute top-8 right-8 text-white text-3xl hover:text-gold transition z-50">
+        <i class="fas fa-times"></i>
+    </button>
+    <button onclick="prevImage()" class="absolute left-4 md:left-12 text-white/70 hover:text-gold text-4xl transition z-50">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button onclick="nextImage()" class="absolute right-4 md:right-12 text-white/70 hover:text-gold text-4xl transition z-50">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+    <img id="lightbox-image" src="" class="max-w-[90vw] max-h-[85vh] object-contain rounded-lg shadow-2xl" alt="">
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/80 text-sm">
+        <span id="lightbox-counter">1 / 24</span>
+    </div>
+</div>
+
+<script>
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    let currentIndex = 0;
+    
+    galleryItems.forEach((item, index) => {
+        item.onclick = () => openLightbox(index);
+    });
+    
+    function filterGallery(filter) {
+        const tabs = document.querySelectorAll('.gallery-tab');
+        tabs.forEach(tab => {
+            tab.classList.remove('active', 'bg-gold', 'text-black', 'border-gold');
+            tab.classList.add('border-white/20', 'text-white');
+            if (tab.dataset.filter === filter) {
+                tab.classList.add('active', 'bg-gold', 'text-black', 'border-gold');
+                tab.classList.remove('border-white/20', 'text-white');
+            }
+        });
+        
+        galleryItems.forEach(item => {
+            if (filter === 'all' || item.dataset.category === filter) {
+                item.classList.remove('hidden');
+            } else {
+                item.classList.add('hidden');
+            }
+        });
+    }
+    
+    function openLightbox(index) {
+        const visibleItems = Array.from(galleryItems).filter(item => !item.classList.contains('hidden'));
+        currentIndex = index;
+        document.getElementById('lightbox-image').src = visibleItems[index].querySelector('img').src;
+        document.getElementById('lightbox-counter').textContent = `${index + 1} / ${visibleItems.length}`;
+        document.getElementById('lightbox').classList.remove('hidden');
+    }
+    
+    function closeLightbox() {
+        document.getElementById('lightbox').classList.add('hidden');
+    }
+    
+    function prevImage() {
+        const visibleItems = Array.from(galleryItems).filter(item => !item.classList.contains('hidden'));
+        currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+        document.getElementById('lightbox-image').src = visibleItems[currentIndex].querySelector('img').src;
+        document.getElementById('lightbox-counter').textContent = `${currentIndex + 1} / ${visibleItems.length}`;
+    }
+    
+    function nextImage() {
+        const visibleItems = Array.from(galleryItems).filter(item => !item.classList.contains('hidden'));
+        currentIndex = (currentIndex + 1) % visibleItems.length;
+        document.getElementById('lightbox-image').src = visibleItems[currentIndex].querySelector('img').src;
+        document.getElementById('lightbox-counter').textContent = `${currentIndex + 1} / ${visibleItems.length}`;
+    }
+    
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') prevImage();
+        if (e.key === 'ArrowRight') nextImage();
+    });
+</script>
+
+<!-- CTA Section -->
+<section class="py-20 bg-charcoal relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmxlZSBjeD0iMzAiIGN5PSIzMCIgcj0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9zdmc+')]"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">{% trans "Ready for Your Transformation?" %}</h2>
+        <p class="text-gray-400 text-lg mb-8">{% trans "Book your appointment today and let us create your perfect look" %}</p>
+        <a href="{% url 'contact' %}" class="btn-gold inline-block px-12 py-5 text-black font-bold text-lg rounded-full hover:scale-105 transition">
+            {% trans "Book Now" %}
+        </a>
+    </div>
+</section>
+
+<!-- Back to Top -->
+<a href="#" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center text-black shadow-2xl hover:shadow-gold/50 hover:scale-110 transition z-50">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+{% endblock %}

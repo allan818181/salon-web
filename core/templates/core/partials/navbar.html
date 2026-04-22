@@ -1,0 +1,85 @@
+{% load i18n %}
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <!-- Logo -->
+            <a href="{% url 'home' %}" class="flex items-center gap-3">
+                <div class="w-10 h-10 gold-bg rounded-full flex items-center justify-center">
+                    <span class="text-black font-display font-bold text-xl">L</span>
+                </div>
+                <span class="font-script text-2xl text-white tracking-wide">Lumina<span class="gold-text"> Salon</span></span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="{% url 'home' %}" class="nav-link {% if request.path == '/' %}active text-gold{% else %}text-white{% endif %} text-sm uppercase tracking-wider font-medium hover:text-gold transition">
+                    {% trans "HOME" %}
+                </a>
+                <a href="{% url 'services' %}" class="nav-link {% if '/services' in request.path %}active text-gold{% else %}text-white{% endif %} text-sm uppercase tracking-wider font-medium hover:text-gold transition">
+                    {% trans "SERVICES" %}
+                </a>
+                <a href="{% url 'menu' %}" class="nav-link {% if '/menu' in request.path %}active text-gold{% else %}text-white{% endif %} text-sm uppercase tracking-wider font-medium hover:text-gold transition">
+                    {% trans "MENU" %}
+                </a>
+                <a href="{% url 'gallery' %}" class="nav-link {% if '/gallery' in request.path %}active text-gold{% else %}text-white{% endif %} text-sm uppercase tracking-wider font-medium hover:text-gold transition">
+                    {% trans "GALLERY" %}
+                </a>
+                <a href="{% url 'join' %}" class="nav-link {% if '/join' in request.path %}active text-gold{% else %}text-white{% endif %} text-sm uppercase tracking-wider font-medium hover:text-gold transition">
+                    {% trans "JOIN" %}
+                </a>
+                <a href="{% url 'contact' %}" class="nav-link {% if '/contact' in request.path %}active text-gold{% else %}text-white{% endif %} text-sm uppercase tracking-wider font-medium hover:text-gold transition">
+                    {% trans "CONTACT" %}
+                </a>
+            </div>
+            
+            <!-- Right Side -->
+            <div class="flex items-center gap-4">
+                <!-- Language Switcher -->
+                <div class="flex border border-white/20 rounded-lg overflow-hidden text-xs">
+                    <a href="{% url 'set_language' 'en' %}?next={{ request.path }}" 
+                       class="px-3 py-2 {% if request.LANGUAGE_CODE == 'en' or not request.LANGUAGE_CODE %}bg-gold text-black{% else %}text-white hover:bg-white/10{% endif %} transition">
+                        EN
+                    </a>
+                    <a href="{% url 'set_language' 'sw' %}?next={{ request.path }}" 
+                       class="px-3 py-2 {% if request.LANGUAGE_CODE == 'sw' %}bg-gold text-black{% else %}text-white hover:bg-white/10{% endif %} border-l border-white/20 transition">
+                        SW
+                    </a>
+                </div>
+                
+                <!-- Book Now Button -->
+                <a href="{% url 'contact' %}" 
+                   class="hidden md:block px-6 py-2.5 border-2 border-gold text-gold text-sm uppercase tracking-wider font-semibold hover:bg-gold hover:text-black transition rounded-full">
+                    {% trans "Book Now" %}
+                </a>
+                
+                <!-- Mobile Menu Toggle -->
+                <button onclick="toggleMobileMenu()" class="lg:hidden text-white p-2">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-black/98 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 py-6 space-y-4">
+            <a href="{% url 'home' %}" class="block text-white hover:text-gold text-sm uppercase tracking-wider py-2">{% trans "HOME" %}</a>
+            <a href="{% url 'services' %}" class="block text-white hover:text-gold text-sm uppercase tracking-wider py-2">{% trans "SERVICES" %}</a>
+            <a href="{% url 'menu' %}" class="block text-white hover:text-gold text-sm uppercase tracking-wider py-2">{% trans "MENU" %}</a>
+            <a href="{% url 'gallery' %}" class="block text-white hover:text-gold text-sm uppercase tracking-wider py-2">{% trans "GALLERY" %}</a>
+            <a href="{% url 'join' %}" class="block text-white hover:text-gold text-sm uppercase tracking-wider py-2">{% trans "JOIN" %}</a>
+            <a href="{% url 'contact' %}" class="block text-white hover:text-gold text-sm uppercase tracking-wider py-2">{% trans "CONTACT" %}</a>
+            <a href="{% url 'contact' %}" class="block text-center mt-6 px-6 py-3 bg-gold text-black text-sm uppercase tracking-wider font-semibold rounded-full">
+                {% trans "Book Now" %}
+            </a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+    }
+</script>

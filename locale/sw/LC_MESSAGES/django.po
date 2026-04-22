@@ -1,0 +1,776 @@
+# Kiswahili translations for Lumina Salon
+msgid ""
+msgstr ""
+"Project-Id-Version: Lumina Salon\n"
+"Language: sw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Home"
+msgstr "Nyumbani"
+
+msgid "Services"
+msgstr "Huduma"
+
+msgid "Contact"
+msgstr "Wasiliana"
+
+msgid "Book Now"
+msgstr "Weka Miadi"
+
+msgid "Learn More"
+msgstr "Jifunze Zaidi"
+
+msgid "Call Us"
+msgstr "Tupige Simu"
+
+msgid "Passion • Reliability • Service"
+msgstr "Bidii • Kuaminifu • Huduma"
+
+msgid "LET YOUR HAIR DO THE TALKING"
+msgstr "RUHUSU NYWELE ZAKU ONYESHA"
+
+msgid "Dar es Salaam's Top Choice. Your Hair And Beauty Destination."
+msgstr "Chaguo Bora Dar es Salaam. Mahali pa Nywele na Urembo."
+
+msgid "TIME FOR A CHANGE?"
+msgstr "WAKTI WA MBADILIKO?"
+
+msgid "Welcome to Dar es Salaam's premier beauty and hair salon."
+msgstr "Karibu kwenye salon ya kuvutia hapa Dar es Salaam."
+
+msgid "We specialize in connecting with our clients to create a relaxing atmosphere."
+msgstr "Tunashughulisha kuwapa wateja utulivu."
+
+msgid "where every detail is designed to accentuate your natural features."
+msgstr "kila kiasi imepangwa kukufanya uonekane vizuri."
+
+msgid "Our expert stylists work closely with you to discover designs."
+msgstr "Wafanyabiasha wetu wana kazi nawe kwa karibu."
+
+msgid "that reflect your individuality and help you find your next look."
+msgstr "inayoonyesha tabia yako na kukusaidia kupata mtindo mpya."
+
+msgid "Come experience the personal touch at Lumina Salon."
+msgstr "Njoo uone furaha ya binafsi kwenye Lumina Salon."
+
+msgid "HOME"
+msgstr "NYUMbani"
+
+msgid "SERVICES"
+msgstr "HUDUMA"
+
+msgid "MENU"
+msgstr "MENI"
+
+msgid "GALLERY"
+msgstr "TAASIFA"
+
+msgid "JOIN OUR TEAM"
+msgstr "JIUNGE NA TIMU"
+
+msgid "CONTACT US"
+msgstr "WASILIANA NASI"
+
+msgid "JOIN"
+msgstr "JIUNGE"
+
+msgid "CONTACT"
+msgstr "WASILIANA"
+
+msgid "Our Premium Services"
+msgstr "Huduma Zetu za Kipekee"
+
+msgid "All"
+msgstr "Zote"
+
+msgid "Hair"
+msgstr "Nywele"
+
+msgid "Hair Cutting"
+msgstr "Kukata Nywele"
+
+msgid "Expert cuts and styling for all hair types"
+msgstr "Mikata na mitindo ya wataalamu"
+
+msgid "Hair Coloring"
+msgstr "Rangi ya Nywele"
+
+msgid "Professional coloring and balayage"
+msgstr "Rangi za Kitaalamu"
+
+msgid "Eyelash Extensions"
+msgstr "Ua wa Macho"
+
+msgid "Luscious lashes 24/7"
+msgstr "Macho Mazuri"
+
+msgid "Makeup Art"
+msgstr "Makeup"
+
+msgid "Spa & Massage"
+msgstr "Spa na Masaji"
+
+msgid "A WARM WELCOME"
+msgstr "KARIBU SANA"
+
+msgid "We believe everyone deserves to look and feel their best."
+msgstr "Tunaamini kila mtu anastahili kuonekana vizuri."
+
+msgid "Our professional stylists will help create a look that matches your personality and lifestyle."
+msgstr "Wafanyabiasha wetu watazosaidia kupata mtindo unaofaa."
+
+msgid "ARE YOU READY TO BLUME?"
+msgstr "UNA TAYARI KU BLUME?"
+
+msgid "We're curating an aesthetic that expresses your unique personality."
+msgstr "Tunaondoa urembo unaoonyesha tabia yako."
+
+msgid "Our beauty specialists are dedicated to making you look and feel your absolute best."
+msgstr "Wataalamu wetu wamejitolea kukufanya uonekane vizuri."
+
+msgid "View All Services"
+msgstr "Tazama Huduma Zote"
+
+msgid "View Gallery"
+msgstr "Tazama Taasifa"
+
+msgid "Book Appointment"
+msgstr "Weka Miadi"
+
+msgid "About Us"
+msgstr "Kuhusu Yetu"
+
+msgid "Welcome"
+msgstr "Karibu"
+
+msgid "What We Offer"
+msgstr "Tunachotenda"
+
+msgid "OUR SERVICES"
+msgstr "HUDUMA ZETU"
+
+msgid "Gallery"
+msgstr "Taasifa"
+
+msgid "Our Beautiful Work"
+msgstr "Kazi Yetu ya Kauni"
+
+msgid "Explore our stunning transformations and professional services"
+msgstr "Angalia mabadiliko yetu ya kuvutia"
+
+msgid "ALL"
+msgstr "ZOTE"
+
+msgid "HAIR"
+msgstr "NYWELE"
+
+msgid "MAKEUP"
+msgstr "MAKEUP"
+
+msgid "NAILS"
+msgstr "KUCHA"
+
+msgid "SPA"
+msgstr "SPA"
+
+msgid "Ready for Your Transformation?"
+msgstr "Una tayari kwa Badiliko?"
+
+msgid "Book your appointment today and let us create your perfect look"
+msgstr "Weka miadi leo na tuunde muonekane wako kamili"
+
+msgid "Happy Clients"
+msgstr "Wateja Furaha"
+
+msgid "Years Experience"
+msgstr "Miaka ya uzoefu"
+
+msgid "Professional Stylists"
+msgstr "Wafanyabiasha"
+
+msgid "Star Rating"
+msgstr "Kiwango"
+
+msgid "Quick Links"
+msgstr "Viungo vya Haraka"
+
+msgid "Phone"
+msgstr "Simu"
+
+msgid "Email"
+msgstr "Barua Pepe"
+
+msgid "Address"
+msgstr "Anwani"
+
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+msgid "Monday"
+msgstr "Jumatatu"
+
+msgid "Tuesday"
+msgstr "Jumanne"
+
+msgid "Wednesday"
+msgstr "Jumatano"
+
+msgid "Thursday"
+msgstr "Alhamisi"
+
+msgid "Friday"
+msgstr "Ijumaa"
+
+msgid "Saturday"
+msgstr "Jumatano"
+
+msgid "Sunday"
+msgstr "Jumapili"
+
+msgid "11am - 7pm"
+msgstr "11 - 7"
+
+msgid "10am - 8pm"
+msgstr "10 - 8"
+
+msgid "9am - 6pm"
+msgstr "9 - 6"
+
+msgid "Closed"
+msgstr "Fungwa"
+
+msgid "OUR LOCATION"
+msgstr "MAHALI PETU"
+
+msgid "All rights reserved."
+msgstr "Haki zote hifadhiwa."
+
+msgid "First Name"
+msgstr "Jina la Kwanza"
+
+msgid "Last Name"
+msgstr "Jina la Mwisho"
+
+msgid "Email Address"
+msgstr "Barua Pepe"
+
+msgid "Phone Number"
+msgstr "Nambari ya Simu"
+
+msgid "Submit"
+msgstr "Wasilisha"
+
+msgid "Full Name"
+msgstr "Jina Kamili"
+
+msgid "Thank you! Your appointment has been booked successfully. We will contact you shortly to confirm."
+msgstr "Asante! Miadi yako imekwama. Tutawasiliana hivi karibuni."
+
+msgid "Thank you! Your application has been submitted successfully. We will review and contact you if shortlisted."
+msgstr "Asante! Maombi yako yamewasilishwa. Tutakagua na kutawasiliana."
+
+msgid "Beautiful Hair"
+msgstr "Nywele za Kuvutia"
+
+msgid "Salon Interior"
+msgstr "Ndani ya Salon"
+
+msgid "Welcome to Dar es Salaam's premier beauty and hair salon. We specialize in creating a relaxing atmosphere where every detail is designed to accentuate your natural features."
+msgstr "Karibu kwenye salon ya kuvutia ya k.top hapa Dar es Salaam. Tunajitolea kuunda mazingira ya utulivu ambapo kila kiasi imepangwa kukufanya uonekane vizuri."
+
+msgid "Our expert stylists work closely with you to discover designs that reflect your individuality. Come experience the personal touch at Lumina Salon."
+msgstr "Wafanyabiasha wetu wana kazi nawe kwa karibu kugundua mitindo inayoonyesha tabia yako. Njoo uone furaha ya binafsi kwenye Lumina Salon."
+
+msgid "Come and experience the personal touch at Lumina Salon. We believe everyone deserves to look and feel their best."
+msgstr "Njoo uone furaha ya binafsi kwenye Lumina Salon. Tunaamini kila mtu anastahili kuonekana na kujiona vizuri."
+
+msgid "Our bright, comfortable, and relaxing environment is designed to help you blossom into your most radiant self."
+msgstr "Mazingira yetu ya wasana na ya utulivu imeundwa kukusaidia kuwa nguvu zaidi."
+
+msgid "We're curating an aesthetic that expresses your unique personality. Our passion is helping people achieve transformations that boost confidence."
+msgstr "Tunaunda urembo unaoonyesha tabia yako ya kipekee. bidii yetu ni kusaidia watu kupata mabadiliko ya kujaminisha."
+
+msgid "RELAX & RENEW AT OUR SALON"
+msgstr "JI relaxe & Upya kwenye Salon"
+
+msgid "Step into our serene sanctuary and walk out feeling rejuvenated. Our welcoming environment is designed for you to express your vision and needs."
+msgstr "Ingia kwenye makulifu yetu na utoke ukihisi kurejeshwa. Mazingira yetu ya karibuni imeundwa kukuwezesha kueleza maono yako."
+
+msgid "Whether you need a trim to refresh your current style, a total makeover, or special event styling, our skilled team delivers exceptional results."
+msgstr "Iwe unacheki mcheduo wa kuboresha mtindo wako, Badiliko kamili, au utendi maalum, timu yetu ya wataalamu hutoa matokeo ya kipekee."
+
+msgid "Our stylists are trained in the latest coloring techniques and will start by getting clear on your needs and vision."
+msgstr "Wafanyabiasha wetu wamefundwa kwenye rangi za hivi karibuni na wataanza kupata wazi kwenye mahitaji yako."
+
+msgid "Let's have a chat about your hair, your vision, and your inspiration. We'll talk about the smartest ways to get your hair healthy, happy, and beautiful. Additionally, we'll let you know exactly how much your services will cost before we begin."
+msgstr "Tuangalie nywele zako, maono yako, na ufunzo. Tutazungumza kuhusu njema zaidi ya kupata nywele zdrav. Pia, tutakuambia kiasi gani huduma zako zitagharimu kabla ya kuanza."
+
+msgid "Expert haircuts and hair color techniques including balayage, highlights, lowlights, babylights, and ombre. We specialize in customized techniques for all hair types, including blonde hair experts and curly hair specialists. We deliver the best result possible every time."
+msgstr "Mikata yaKitaalamu na technique za rangi ikiwa ni balayage, highlights, lowlights, babylights, na ombre. Tuna specialized kwenye technique zote za nywele, ikiwa ni wataalamu wa nywele za blonde na nywele za curl. Tunatoa matokeo bora kila wakati."
+
+msgid "Transform your look with our premium human hair extension options including weaves, fusions, tape-in, and clip-in extensions. Our stylists will help decide what's right for you, ensuring the best experience with natural-looking results."
+msgstr "Badilisha muonekane wako na options zetu za nywele za kibinadamu ikijumuisha weaves, fusions, tape-in, na clip-in extensions. Wafanyabiasha wetu wataasaidia kufanya maamuzi yaliyo sahihi kwako, kuhakikisha matokeo asili."
+
+msgid "Get luscious lashes 24/7 with our professional eyelash extension services. We offer classic, volume, mega volume, and hybrid options. Whether you're looking for the hottest lash extensions in town, we've got you covered."
+msgstr "Pata ma eyelashes Mazuri kila saa na huduma zetu za Eyelash extension. Tunatoa classic, volume, mega volume, na hybrid options. Ukitafuta Eyelash extensions bora mjini, tayari."
+
+msgid "Save time in your daily routine with our semi-permanent eyebrow solutions. We offer powder brow and ombre brow services, plus threading services to shape your brows perfectly."
+msgstr "Weka muda katika routine yako ya kila siku na sulutions zetu za semi-permanent eyebrow. Tunatoa powder brow na ombre brow services, pamoja na threading services kuchapa eyebrows zako vizuri."
+
+msgid "Professional makeup services for weddings, special events, and photoshoots. From a natural look to full glam, we'll help you look as good as you feel for any occasion."
+msgstr "Huduma za makeup za kustaafu, events maalum, na photoshoots. Kutoka kwenye kuko na kufika kwenye glam kamili, tutakusaidia kuonekana vizuri kila tukio."
+
+msgid "Special occasion styling and makeup services for your big day. We offer bride and bridal party packages. We can come to your venue for on-site services, or you can visit us at the salon."
+msgstr "Huduma za utendi na makeup kwenye siku yako kuu. Tunatoa bride na bridal party packages. Tunaweza kukuja kwenye mahali pako kwa huduma za eneo, au unaweza kutembelea salon."
+
+msgid "SERVICE MENU"
+msgstr "MENI YA HUDUMA"
+
+msgid "Healthy Hair Services For All Hair Types"
+msgstr "Huduma za Nywele Afya Kwa Aina Zote za Nywele"
+
+msgid "Lumina Salon offers professional hair care services for all hair types. Enjoy a relaxing scalp massage with every wash, hot towel compress, and meticulous attention to detail. We use only quality products to ensure the best results for your hair."
+msgstr "Lumina Salon inatoa huduma za huduma za nywele kwa aina zote za nywele. Furahia massage ya scalp kila wewe, towel ya joto, na makini kwenye kila kiasi. Tunatumia bidii tu ili kuhakikisha matokeo bora kwa nywele zako."
+
+msgid "CUTTING"
+msgstr "KUCHAPA"
+
+msgid "Women's Wash / Cut / Style"
+msgstr "Kuchapa / Kukata / Mitindo ya Mwanamke"
+
+msgid "65,000 TSh & Up"
+msgstr "TSh 65,000 na Zaidi"
+
+msgid "From 65,000 TSh"
+msgstr "Kutoka TSh 65,000"
+
+msgid "Men's Cut"
+msgstr "Kuchapa ya Mwanaume"
+
+msgid "35,000 TSh & Up"
+msgstr "TSh 35,000 na Zaidi"
+
+msgid "From 35,000 TSh"
+msgstr "Kutoka TSh 35,000"
+
+msgid "Children's Cut (Under 13 years)"
+msgstr "Kuchapa ya Watoto (chini ya miaka 13)"
+
+msgid "25,000 TSh & Up"
+msgstr "TSh 25,000 na Zaidi"
+
+msgid "From 25,000 TSh"
+msgstr "Kutoka TSh 25,000"
+
+msgid "Women's Wash and Style"
+msgstr "Kuosha na Mitindo ya Mwanamke"
+
+msgid "45,000 TSh & Up"
+msgstr "TSh 45,000 na Zaidi"
+
+msgid "From 45,000 TSh"
+msgstr "Kutoka TSh 45,000"
+
+msgid "Formal Style"
+msgstr "Mitindo Rasmi"
+
+msgid "75,000 TSh & Up"
+msgstr "TSh 75,000 na Zaidi"
+
+msgid "From 75,000 TSh"
+msgstr "Kutoka TSh 75,000"
+
+msgid "Hair Treatments"
+msgstr "Matibabu ya Nywele"
+
+msgid "COLOURING"
+msgstr "RANGI"
+
+msgid "Colour Retouch"
+msgstr "Rangi ya Kurudisha"
+
+msgid "60,000 TSh & Up"
+msgstr "TSh 60,000 na Zaidi"
+
+msgid "From 60,000 TSh"
+msgstr "Kutoka TSh 60,000"
+
+msgid "Glaze"
+msgstr "Glaze"
+
+msgid "70,000 TSh & Up"
+msgstr "TSh 70,000 na Zaidi"
+
+msgid "From 70,000 TSh"
+msgstr "Kutoka TSh 70,000"
+
+msgid "Creative Colour"
+msgstr "Rangi ya Kiubunifu"
+
+msgid "By Consultation"
+msgstr "Kwa Maongezi"
+
+msgid "Partial Foil"
+msgstr "Partial Foil"
+
+msgid "95,000 TSh & Up"
+msgstr "TSh 95,000 na Zaidi"
+
+msgid "From 95,000 TSh"
+msgstr "Kutoka TSh 95,000"
+
+msgid "Full Foil"
+msgstr "Full Foil"
+
+msgid "130,000 TSh & Up"
+msgstr "TSh 130,000 na Zaidi"
+
+msgid "From 130,000 TSh"
+msgstr "Kutoka TSh 130,000"
+
+msgid "HAIR EXTENSION"
+msgstr "EXTENSION YA NYWELE"
+
+msgid "Human Hair Extension"
+msgstr "Extension ya Nywele za Kibinadamu"
+
+msgid "OTHER SERVICES"
+msgstr "HUDUMA NYINGINE"
+
+msgid "Gift Certificates"
+msgstr "Cheti za Zawadi"
+
+msgid "Available"
+msgstr "Inapatikana"
+
+msgid "In Salon Packages"
+msgstr "Pakage za Salon"
+
+msgid "Ask For Details"
+msgstr "Uliza Kwa Maafume"
+
+msgid "Wedding Packages"
+msgstr "Pakage za Harusi"
+
+msgid "Makeup Application"
+msgstr "Maombi ya Makeup"
+
+msgid "WAXING"
+msgstr "WAXING"
+
+msgid "Facial Waxing & Threading"
+msgstr "Waxing ya Uso & Threading"
+
+msgid "Eyebrow"
+msgstr "Eyebrow"
+
+msgid "15,000 TSh"
+msgstr "TSh 15,000"
+
+msgid "Lip & Chin"
+msgstr "Midomo & Kinu"
+
+msgid "Eyebrow Tint"
+msgstr "Eyebrow Tint"
+
+msgid "20,000 TSh"
+msgstr "TSh 20,000"
+
+msgid "Threading"
+msgstr "Threading"
+
+msgid "Powder & Ombre Brows"
+msgstr "Powder & Ombre Brows"
+
+msgid "Prices may vary according to level of stylist. Chemical services do not include cut & style. Kindly provide 24-hour cancellation notice."
+msgstr "Bei inaweza kutofautiana kulingana na kiwango cha stylist. Huduma za kemikali hazijumuishi k chopa & style. Tafadhali toa ilani ya uaguzi wa saa 24."
+
+msgid "Relaxation and rejuvenation treatments"
+msgstr "Matibabu ya utulivu na uzalishaji"
+
+msgid "Gorgeous Waves"
+msgstr "Mawimbi Mazuri"
+
+msgid "Silky Straight"
+msgstr "Nyosha Madhubuti"
+
+msgid "Volume Bob"
+msgstr "Bob ya Kiasi"
+
+msgid "Balayage Magic"
+msgstr "Magic ya Balayage"
+
+msgid "Copper Dreams"
+msgstr "Ndoto za Copper"
+
+msgid "Blonde Elegance"
+msgstr "Fahari ya Blonde"
+
+msgid "Bridal Glam"
+msgstr "Fahari ya Harusi"
+
+msgid "Natural Glow"
+msgstr "Mwangaza wa Asili"
+
+msgid "Evening Glam"
+msgstr "Glam ya Jioni"
+
+msgid "Bold & Beautiful"
+msgstr "Daringi & Mwanga"
+
+msgid "Gel Perfection"
+msgstr "Kamili ya Gel"
+
+msgid "French Tips"
+msgstr "French Tips"
+
+msgid "Acrylic Art"
+msgstr "Sanatisi ya Acrylic"
+
+msgid "Color Crush"
+msgstr "Mwendoshazi wa Rangi"
+
+msgid "Facial Care"
+msgstr "Huduma ya Uso"
+
+msgid "Massage Bliss"
+msgstr "Furaha ya Massage"
+
+msgid "Head Spa"
+msgstr "Spa ya Kichwa"
+
+msgid "Caramel Waves"
+msgstr "Mawimbi ya Caramel"
+
+msgid "Cut & Style"
+msgstr "Kuchapa & Mitindo"
+
+msgid "Style Studio"
+msgstr "Studio ya Mitindo"
+
+msgid "Ombre Dreams"
+msgstr "Ndoto za Ombre"
+
+msgid "Contact Us"
+msgstr "Wasiliana NasI"
+
+msgid "Book Your Appointment"
+msgstr "Weka Miadi Yako"
+
+msgid "Enter your first name"
+msgstr "Weka jina lako la kwanza"
+
+msgid "Enter your last name"
+msgstr "Weka jina lako la mwisho"
+
+msgid "your@email.com"
+msgstr "yako@baruapepe.com"
+
+msgid "Service You Want"
+msgstr "Huduma Unayohitaji"
+
+msgid "Select a service"
+msgstr "Chagua huduma"
+
+msgid "Hair Cutting & Styling"
+msgstr "Kukata & Mitindo wa Nywele"
+
+msgid "Hair Extensions"
+msgstr "Extenshoni ya Nywele"
+
+msgid "Semi-Permanent Eyebrow"
+msgstr "Eyebrow ya Semi-Permanent"
+
+msgid "Bridal Services"
+msgstr "Huduma za Harusi"
+
+msgid "Other"
+msgstr "Nyingine"
+
+msgid "Preferred Appointment Date"
+msgstr "Tarehe Inayopendelewa ya Miadi"
+
+msgid "Preferred Appointment Time"
+msgstr "Saa Inayopendelewa ya Miadi"
+
+msgid "Hr"
+msgstr "Saa"
+
+msgid "Additional Details"
+msgstr "Maafume ya Ziada"
+
+msgid "Tell us more about your needs, preferences, or any special requests..."
+msgstr "Tuambie zaidi kuhusu mahitaji yako, mapendeleo, au maombi maalum..."
+
+msgid "CONTACT DETAILS"
+msgstr "Maelezo ya Wasiliana"
+
+msgid "Mwenge, Near Diamond Plaza"
+msgstr "Mwenge, Karibu na Diamond Plaza"
+
+msgid "Dar es Salaam, Tanzania"
+msgstr "Dar es Salaam, Tanzania"
+
+msgid "Mwenge Area, Near Diamond Plaza, Dar es Salaam"
+msgstr "Eneo la Mwenge, Karibu na Diamond Plaza, Dar es Salaam"
+
+msgid "Appointment Booked!"
+msgstr "Miadi Imekubaliwa!"
+
+msgid "Thank you for booking with Lumina Salon. We have received your appointment request and will contact you shortly to confirm."
+msgstr "Asante kwa kuhudumu na Lumina Salon. Tumepokea maombi yako ya miadi na tutawasiliana hivi karibuni kuthibitisha."
+
+msgid "Confirmation sent to:"
+msgstr "Thibitisho limetumwa kwa:"
+
+msgid "Done"
+msgstr "Imekamilika"
+
+msgid "Join Our Team"
+msgstr "Jiunge na Timu Yetu"
+
+msgid "BE PART OF SOMETHING SPECIAL"
+msgstr "KUWA SEHEMU YA KINASI MAALUM"
+
+msgid "At Lumina Salon, we believe that our team is our greatest asset. We're always looking for talented, passionate individuals who share our commitment to excellence and customer service. If you're this person, we'd love to hear from you."
+msgstr "Kwenye Lumina Salon, tunaamini timu yetu ni hazina yetu kubwa. Tunatafuta watu wenye talent, wabunifu ambao wanashiriki ahadi yetu ya ubora na huduma kwa wateja. Ikiwa wewe ni mtu huyu, tungependa kusikia kutoka kwako."
+
+msgid "Join a team that values creativity, professionalism, and making every client feel special. We offer competitive pay, a beautiful work environment, and ongoing training opportunities."
+msgstr "Jiunge na timu inayo thamani ubunifu, kitaalumu, na kufanya kila mteja ahisi maalum. Tunatoa malipo ya ushindani, mazingira mazuri ya kazi, na fursa za mafundisho Endelevu."
+
+msgid "Career Opportunities"
+msgstr "Fursa za kazi"
+
+msgid "OPEN POSITIONS"
+msgstr " NAFASI ZA KAZI"
+
+msgid "Senior Stylist"
+msgstr "Stylist wa Kwanza"
+
+msgid "We are looking for an experienced senior stylist with at least 5 years of experience in cutting, coloring, and styling. Must have excellent communication skills and a passion for creating beautiful hair."
+msgstr "Tunaangalia stylist mwenye uzoefu wenye angalau miaka 5 ya uzoefu ikichapa, rangi, na mitindo. Lazima awe na uwezo wa mawasiliano bora na rushwa ya kuunda nywele nzuri."
+
+msgid "5+ years experience"
+msgstr "Uzoefu wa miaka 5+"
+
+msgid "Expert in cut & color"
+msgstr "Mtaalamu katika k chopa & rangi"
+
+msgid "Great communication"
+msgstr "Mawasiliano mazuri"
+
+msgid "Junior Stylist"
+msgstr "Stylist Mdogo"
+
+msgid "Perfect for recent graduates or stylists starting their career. We provide training and mentorship to help you grow in your profession."
+msgstr "Bora kwa wale waliohitimu hivi karibuni au stylists wanaianza kazi yao. Tunatoa mafundisho na mentor kukusaidia kukua katika profession yako."
+
+msgid "Fresh graduates welcome"
+msgstr "Watahiriwaliohitimu karibu"
+
+msgid "Training provided"
+msgstr "Mafundisho yanatolewa"
+
+msgid "Growth opportunities"
+msgstr "Fursa za ukuaji"
+
+msgid "Spa Therapist"
+msgstr "Therapist wa Spa"
+
+msgid "Join our spa team to provide massage and relaxation services. Certification in massage therapy required."
+msgstr "Jiunge na timu yetu ya spa kutoa huduma za massage na utulivu. Cheti cha massage therapy kinahITAJIWA."
+
+msgid "Massage certification"
+msgstr "Cheti cha Massage"
+
+msgid "Spa experience"
+msgstr "Uzoefu wa Spa"
+
+msgid "Customer focused"
+msgstr "Alizama kwa Mteja"
+
+msgid "Lash & Brow Specialist"
+msgstr "Mtaalamu wa Lash & Brow"
+
+msgid "Specialist in eyelash extensions and eyebrow shaping. Additional training available for the right candidate."
+msgstr "Mtaalamu katika eyelash extensions na umbiso wa eyebrow. Mafundisho ya ziada inapatikana kwa mhitimu sahihi."
+
+msgid "Eye for detail"
+msgstr "Jicho kwa kiasi"
+
+msgid "Precision work"
+msgstr "Kazi ya KPrec"
+
+msgid "Training available"
+msgstr "Mafundisho yanapatikana"
+
+msgid "Receptionist"
+msgstr "Mwendesha"
+
+msgid "Be the first point of contact for our clients. Warm personality and organizational skills required."
+msgstr "Kuwa kwanza ya wasiliani kwa wateja wetu. Tabia ya Moto na uwezo wa kutunga inahitajika."
+
+msgid "Friendly demeanor"
+msgstr "Mtindo wa Furaha"
+
+msgid "Organized"
+msgstr "Imepangwa vizuri"
+
+msgid "Multi-tasker"
+msgstr "Mfanyakazi wa kazi nyingi"
+
+msgid "Makeup Artist"
+msgstr "Mchoraji wa Makeup"
+
+msgid "Professional makeup artist for events, bridal, and photoshoots. Portfolio required."
+msgstr "Mchoraji wa makeup kitaalamu kwa matukio, bridal, na photoshoots. Portfolio inahitajika."
+
+msgid "Portfolio required"
+msgstr "Portfolio inahitajika"
+
+msgid "Event experience"
+msgstr "Uzoefu wa Matukio"
+
+msgid "Creative flair"
+msgstr "Ubaguzi wa Ubunifu"
+
+msgid "Apply Now"
+msgstr "Omba Sasa"
+
+msgid "APPLY NOW"
+msgstr "OMBA SASA"
+
+msgid "Your full name"
+msgstr "Jina lako kamili"
+
+msgid "Position You're Applying For"
+msgstr "Nafasi Unayoomba"
+
+msgid "Select a position"
+msgstr "Chagua nafasi"
+
+msgid "Experience"
+msgstr "Uzoefu"
+
+msgid "Tell us about your relevant experience..."
+msgstr "Tuambie kuhusu uzoefu wako unaohusiana..."
+
+msgid "Why Do You Want To Join Us?"
+msgstr "Kwa Nini Unataka Jiunge Nasi?"
+
+msgid "Share your passion with us..."
+msgstr "Shiriki rushwa yako na wetu..."
+
+msgid "Submit Application"
+msgstr "Wasilisha Maombi"
+
+msgid "Join Us"
+msgstr "Jiunge Nasi"
+
+msgid "Premium luxury salon in Dar es Salaam. Hair, beauty, and spa services."
+msgstr "Salon ya kifahari ya lujo hapa Dar es Salaam. Huduma za nywele, urembo, na spa."
+
+msgid "Menu"
+msgstr "Meni"

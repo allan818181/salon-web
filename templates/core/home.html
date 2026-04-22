@@ -1,0 +1,230 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}Lumina Salon - Dar es Salaam{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80" 
+             class="w-full h-full object-cover" alt="Lumina Salon">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/40"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 py-32">
+        <div class="max-w-3xl">
+            <p class="text-gold text-lg tracking-[0.3em] uppercase mb-6 slide-up">
+                {% trans "Passion • Reliability • Service" %}
+            </p>
+            <h1 class="font-display text-5xl md:text-7xl font-bold leading-tight mb-8 slide-up">
+                {% trans "LET YOUR HAIR DO THE TALKING" %}
+            </h1>
+            <p class="text-gray-300 text-xl md:text-2xl mb-12 slide-up">
+                {% trans "Dar es Salaam's Top Choice. Your Hair And Beauty Destination." %}
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 slide-up">
+                <a href="{% url 'contact' %}" class="btn-gold px-10 py-4 text-black font-bold text-center rounded-full">
+                    {% trans "Book Now" %}
+                </a>
+                <a href="tel:+255700000000" class="px-10 py-4 border-2 border-white/30 text-white font-bold text-center rounded-full hover:bg-white/10 transition">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    {% trans "Call Us" %}
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slider Dots -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+        <span class="w-3 h-3 bg-gold rounded-full"></span>
+        <span class="w-3 h-3 bg-white/30 rounded-full"></span>
+        <span class="w-3 h-3 bg-white/30 rounded-full"></span>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 right-8 z-10 animate-bounce hidden md:block">
+        <div class="w-8 h-14 border-2 border-white/30 rounded-full flex justify-center pt-2">
+            <div class="w-1 h-2 bg-white/50 rounded-full animate-ping"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="py-10 bg-charcoal border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-4xl font-bold text-gold mb-2">500+</p>
+                <p class="text-gray-400 text-sm">{% trans "Happy Clients" %}</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-gold mb-2">8+</p>
+                <p class="text-gray-400 text-sm">{% trans "Years Experience" %}</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-gold mb-2">15+</p>
+                <p class="text-gray-400 text-sm">{% trans "Professional Stylists" %}</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-gold mb-2">4.9</p>
+                <p class="text-gray-400 text-sm">{% trans "Star Rating" %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="py-24 bg-black">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37aa?w=800&q=80" 
+                     class="w-full rounded-3xl object-cover shadow-2xl" alt="{% trans 'Beautiful Hair' %}">
+                <div class="absolute -bottom-8 -right-8 w-32 h-32 gold-bg rounded-full flex items-center justify-center shadow-xl">
+                    <i class="fas fa-scissors text-2xl text-black"></i>
+                </div>
+                <div class="absolute -top-4 -left-4 w-24 h-24 border-4 border-gold/30 rounded-3xl"></div>
+            </div>
+            <div>
+                <p class="text-gold text-sm tracking-[0.2em] uppercase mb-4">{% trans "About Us" %}</p>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+                    {% trans "TIME FOR A CHANGE?" %}
+                </h2>
+                <div class="wave-divider mb-8"></div>
+                <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                    {% trans "Welcome to Dar es Salaam's premier beauty and hair salon. We specialize in creating a relaxing atmosphere where every detail is designed to accentuate your natural features." %}
+                </p>
+                <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                    {% trans "Our expert stylists work closely with you to discover designs that reflect your individuality. Come experience the personal touch at Lumina Salon." %}
+                </p>
+                <a href="{% url 'contact' %}" class="btn-gold inline-block px-10 py-4 text-black font-bold rounded-full">
+                    {% trans "Book Appointment" %}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="py-24 bg-gradient-to-b from-black to-charcoal">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="text-center mb-16">
+            <p class="text-gold text-sm tracking-[0.2em] uppercase mb-4">{% trans "What We Offer" %}</p>
+            <h2 class="font-display text-4xl md:text-5xl font-bold">{% trans "OUR SERVICES" %}</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Service 1 -->
+            <div class="card-luxury p-8 rounded-3xl text-center group hover:-translate-y-2 transition duration-300">
+                <div class="w-16 h-16 gold-bg rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+                    <i class="fas fa-cut text-xl text-black"></i>
+                </div>
+                <h3 class="font-display text-xl font-bold mb-3">{% trans "Hair Cutting" %}</h3>
+                <p class="text-gray-400 text-sm">{% trans "Expert cuts and styling for all hair types" %}</p>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="card-luxury p-8 rounded-3xl text-center group hover:-translate-y-2 transition duration-300">
+                <div class="w-16 h-16 gold-bg rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+                    <i class="fas fa-palette text-xl text-black"></i>
+                </div>
+                <h3 class="font-display text-xl font-bold mb-3">{% trans "Hair Coloring" %}</h3>
+                <p class="text-gray-400 text-sm">{% trans "Professional coloring and balayage" %}</p>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="card-luxury p-8 rounded-3xl text-center group hover:-translate-y-2 transition duration-300">
+                <div class="w-16 h-16 gold-bg rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+                    <i class="fas fa-eye text-xl text-black"></i>
+                </div>
+                <h3 class="font-display text-xl font-bold mb-3">{% trans "Eyelash Extensions" %}</h3>
+                <p class="text-gray-400 text-sm">{% trans "Luscious lashes that last 24/7" %}</p>
+            </div>
+            
+            <!-- Service 4 -->
+            <div class="card-luxury p-8 rounded-3xl text-center group hover:-translate-y-2 transition duration-300">
+                <div class="w-16 h-16 gold-bg rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+                    <i class="fas fa-spa text-xl text-black"></i>
+                </div>
+                <h3 class="font-display text-xl font-bold mb-3">{% trans "Spa & Massage" %}</h3>
+                <p class="text-gray-400 text-sm">{% trans "Relaxation and rejuvenation treatments" %}</p>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <a href="{% url 'services' %}" class="btn-gold inline-block px-10 py-4 text-black font-bold rounded-full">
+                {% trans "View All Services" %}
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Welcome Section -->
+<section class="py-24 bg-black">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+                <p class="text-gold text-sm tracking-[0.2em] uppercase mb-4">{% trans "Welcome" %}</p>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+                    {% trans "A WARM WELCOME" %}
+                </h2>
+                <div class="wave-divider mb-8"></div>
+                <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                    {% trans "Come and experience the personal touch at Lumina Salon. We believe everyone deserves to look and feel their best." %}
+                </p>
+                <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                    {% trans "Our bright, comfortable, and relaxing environment is designed to help you blossom into your most radiant self." %}
+                </p>
+                <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                    {% trans "Our professional stylists will help create a look that matches your personality and lifestyle." %}
+                </p>
+                <a href="{% url 'gallery' %}" class="btn-gold inline-block px-10 py-4 text-black font-bold rounded-full">
+                    {% trans "View Gallery" %}
+                </a>
+            </div>
+            <div class="order-1 lg:order-2 relative">
+                <img src="https://images.unsplash.com/photo-1560869713-bf4de800c7c4?w=800&q=80" 
+                     class="w-full rounded-3xl object-cover shadow-2xl" alt="{% trans 'Salon Interior' %}">
+                <div class="absolute -top-6 -left-6 w-32 h-32 border-2 border-gold/50 rounded-3xl"></div>
+                <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-charcoal rounded-full flex items-center justify-center shadow-xl">
+                    <i class="fas fa-heart text-gold text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=1920&q=80" 
+             class="w-full h-full object-cover" alt="">
+        <div class="absolute inset-0 bg-black/80"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+            {% trans "ARE YOU READY TO BLUME?" %}
+        </h2>
+        <div class="wave-divider mx-auto mb-8"></div>
+        <p class="text-gray-300 text-lg leading-relaxed mb-4">
+            {% trans "We're curating an aesthetic that expresses your unique personality. Our passion is helping people achieve transformations that boost confidence." %}
+        </p>
+        <p class="text-gray-300 text-lg leading-relaxed mb-10">
+            {% trans "Our beauty specialists are dedicated to making you look and feel your absolute best." %}
+        </p>
+        <a href="{% url 'contact' %}" class="btn-gold inline-block px-12 py-5 text-black font-bold text-lg rounded-full hover:scale-105 transition">
+            {% trans "Book Appointment" %}
+        </a>
+    </div>
+</section>
+
+<!-- Back to Top -->
+<a href="#" class="fixed bottom-8 right-8 w-12 h-12 bg-gold rounded-full flex items-center justify-center text-black shadow-lg hover:shadow-xl transition z-50">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+{% endblock %}
